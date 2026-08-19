@@ -8,7 +8,50 @@
   <meta name="theme-color" content="#0b0f0b">
   <title>E-SCOOT SERVICE | Ремонт и части за тротинетки</title>
   <link rel="stylesheet" href="style.css">
-</head>
+<style>
+.floating-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.floating-buttons a {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 10px;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 5px 18px rgba(0,0,0,.35);
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+.viber {
+  background: #7360F2;
+}
+
+.floating-buttons a:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 600px) {
+  .floating-buttons {
+    right: 14px;
+    bottom: 14px;
+  }
+}
+</style></head>
 <body>
 <header class="header">
   <div class="container nav">
@@ -100,7 +143,7 @@
       <button class="btn btn-primary" type="submit">Изпрати запитване →</button>
       <small id="msg"></small>
     </form>
-  </div>
+</div>
 </section>
 </main>
 
@@ -112,5 +155,13 @@ menuBtn.onclick=()=>nav.classList.toggle('open');
 document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
 function sendForm(e){e.preventDefault();document.getElementById('msg').textContent='Запитването е прието като демонстрация. За реални съобщения трябва да свържем формата с имейл услуга.';}
 </script>
-</body>
+<div class="floating-buttons">
+  <a href="https://wa.me/359882913887" class="whatsapp" target="_blank" aria-label="WhatsApp">
+    WhatsApp
+  </a>
+
+  <a href="viber://chat?number=%2B359882913887" class="viber" aria-label="Viber">
+    Viber
+  </a>
+</div></body>
 </html>
