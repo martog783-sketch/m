@@ -20,3 +20,7 @@ footer{background:#070907;color:#9ba39b;padding:45px 0 20px}.footer{display:grid
 @media(max-width:900px){.cart-layout{grid-template-columns:1fr}}
 
 .add-cart-btn{display:block;width:100%;margin-top:14px;padding:12px 15px;border:0;border-radius:9px;background:var(--green);color:#0a0e09;font-weight:800;cursor:pointer}.cart-summary{position:sticky;top:90px}.cart-order,.cart-call{display:block;text-align:center;text-decoration:none}@media(max-width:900px){.cart-summary{position:static}}
+
+.shop-product button{width:100%;cursor:pointer;font-weight:800;padding:11px 14px;border-radius:8px}
+.real-photo{display:grid;place-items:center;background:#fff;min-height:145px;border-radius:10px;margin-bottom:16px;overflow:hidden}
+.real-photo span{font-size:70px}
