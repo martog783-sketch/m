@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E-SCOOT SERVICE — Електрически тротинетки</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span>⚡</span><div><b>E-SCOOT</b><small>SERVICE</small></div></a>
+    <nav><a class="active" href="#home">Начало</a><a href="#services">Услуги</a><a href="#parts">Части</a><a href="#cart">Количка 🛒 <i id="count">0</i></a></nav>
+    <div class="headContact"><a href="tel:0882913887">📞 0882913887</a><a class="circle" href="https://wa.me/359882913887" target="_blank">◉</a><a class="circle" href="viber://chat?number=%2B359882913887">◉</a></div>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="heroBg"></div>
+  <div class="wrap heroInner">
+    <div class="heroCopy">
+      <div class="tag">ПРОФЕСИОНАЛЕН РЕМОНТ И ПОДДРЪЖКА</div>
+      <h1>E-SCOOT <span>SERVICE</span></h1>
+      <h2>Бързо. Надеждно. На правилното място.</h2>
+      <p>Ремонт, части и професионална поддръжка<br>на електрически тротинетки. Грижим се за твоята<br>свобода на движение!</p>
+      <div class="actions"><a class="btn green" href="tel:0882913887">📞 Обади се сега<br><strong>0882913887</strong></a><a class="btn outline" href="https://wa.me/359882913887" target="_blank">◉ Пиши ни в WhatsApp →</a></div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+<section id="services" class="section">
+  <div class="sectionHead"><div><span></span><h2>Нашите <b>услуги</b></h2><p>Професионална грижа за твоята тротинетка</p></div><a href="#services">Всички услуги →</a></div>
+  <div class="services">
+    <article class="service"><div class="servicePic repair">🔧</div><div class="serviceBody"><div class="icon">🔧</div><h3>Ремонт</h3><p>Диагностика и професионален ремонт<br>на електрически тротинетки.</p><strong>Такса: €25.00</strong><a href="tel:0882913887">Научи повече →</a></div></article>
+    <article class="service"><div class="servicePic parts">🛞</div><div class="serviceBody"><div class="icon blue">🛒</div><h3>Избор от части</h3><p>Оригинални и качествени части<br>за всички модели.</p><a href="#parts">Научи повече →</a></div></article>
+    <article class="service"><div class="servicePic clean">✨</div><div class="serviceBody"><div class="icon purple">✨</div><h3>Почистване</h3><p>Пълно почистване и поддръжка<br>за по-дълъг живот.</p><strong>Такса: €10.00</strong><a href="tel:0882913887">Научи повече →</a></div></article>
+  </div>
+</section>
+
+<section id="parts" class="section productsSection">
+  <div class="sectionHead"><div><span></span><h2>Нашите <b>продукти</b></h2><p>Качествени части за твоята тротинетка</p></div><a href="#parts">Всички продукти →</a></div>
+  <div class="contentGrid">
+    <div class="products">
+      <article class="product"><div class="productImg"><img src="guma-10.jpg" alt="Гума 10"></div><h3>Гума 10"</h3><p>Външна гума за електрическа<br>тротинетка (10x2.50).</p><b>€17.90</b><button onclick="add('Гума 10&quot;',17.90)">🛒 Добави в количката</button></article>
+      <article class="product"><div class="productImg"><img src="spirachen-disk.jpg" alt="Спирачен диск"></div><h3>Спирачен диск</h3><p>160 mm (съвместим с повечето<br>модели).</p><b>€12.78</b><button onclick="add('Спирачен диск',12.78)">🛒 Добави в количката</button></article>
+      <article class="product"><div class="productImg"><img src="spirachna-rakohvatka.jpg" alt="Спирачна ръкохватка"></div><h3>Спирачна ръкохватка</h3><p>Дясна ръкохватка с ускорител<br>(модел: Xiaomi).</p><b>€9.20</b><button onclick="add('Спирачна ръкохватка',9.20)">🛒 Добави в количката</button></article>
+      <article class="product"><div class="productImg"><img src="displey.jpg" alt="Дисплей"></div><h3>Дисплей</h3><p>LCD дисплей (за Xiaomi съвместим).</p><b>€28.12</b><button onclick="add('Дисплей',28.12)">🛒 Добави в количката</button></article>
+    </div>
+    <aside id="cart" class="cart"><div class="cartTitle">🛒 Количка <i id="cartBadge">0</i></div><div id="items"><p>Няма добавени продукти.</p></div><div class="total"><span>Общо:</span><b id="total">€0.00</b></div><button class="order" onclick="order()">◉ Поръчай с WhatsApp</button><button class="clear" onclick="clearCart()">♻ Изчисти количката</button></aside>
+  </div>
+</section>
+</main>
+
+<div class="features"><div>🚚 <b>Бърза доставка</b><small>1-3 работни дни</small></div><div>🛡 <b>Качествени части</b><small>Оригинални и надеждни</small></div><div>🎧 <b>Професионална помощ</b><small>Консултация и поддръжка</small></div><div>★ <b>Доволни клиенти</b><small>Над 1000+ ремонта</small></div></div>
+<footer><div class="wrap footerGrid"><div class="brand"><span>⚡</span><div><b>E-SCOOT</b><small>SERVICE</small></div></div><div>📞 <b>0882913887</b><small>Обади се сега</small></div><div>◉ <b>WhatsApp</b><small>Пиши ни</small></div><div>📍 <b>гр. София</b><small>Бързо и удобно обслужване</small></div><div class="social">●　◎　♪</div></div><div class="copy">© 2026 E-Scoot Service. Всички права запазени.</div></footer>
+
+<script>
+let cart=JSON.parse(localStorage.getItem('scootCart')||'[]');
+function save(){localStorage.setItem('scootCart',JSON.stringify(cart));render()}
+function add(name,price){let x=cart.find(a=>a.name===name);x?x.qty++:cart.push({name,price,qty:1});save()}
+function change(i,n){cart[i].qty+=n;if(cart[i].qty<1)cart.splice(i,1);save()}
+function clearCart(){cart=[];save()}
+function render(){
+ let box=document.getElementById('items'),total=0,count=0;
+ if(!cart.length)box.innerHTML='<p>Няма добавени продукти.</p>';
+ else box.innerHTML=cart.map((x,i)=>{total+=x.price*x.qty;count+=x.qty;return `<div class="cartItem"><div><b>${x.name}</b><small>€${x.price.toFixed(2)}</small></div><div><button onclick="change(${i},-1)">−</button><span>${x.qty}</span><button onclick="change(${i},1)">+</button><button onclick="change(${i},-99)">🗑</button></div></div>`}).join('');
+ document.getElementById('total').textContent='€'+total.toFixed(2);document.getElementById('count').textContent=count;document.getElementById('cartBadge').textContent=count;
+}
+function order(){if(!cart.length){alert('Количката е празна.');return}let t='Здравейте! Искам да поръчам:%0A';cart.forEach(x=>t+='- '+encodeURIComponent(x.name)+' x'+x.qty+'%0A');window.open('https://wa.me/359882913887?text='+t,'_blank')}
+render();
+</script>
+</body></html>
